@@ -1,0 +1,34 @@
+{
+  "name": "@miu33/sfda-client",
+  "version": "1.0.0",
+  "description": "Enterprise Saudi Food & Drug Authority (SFDA) clearance client for eCosma and GHAD medical/cosmetic import permits",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test dist/tests/**/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "sfda",
+    "ecosma",
+    "ghad",
+    "saudi-arabia",
+    "customs",
+    "cross-border",
+    "trade-compliance"
+  ],
+  "author": "MIU_33 Studio",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}
